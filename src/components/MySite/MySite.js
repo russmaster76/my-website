@@ -5,8 +5,6 @@ function MySite() {
     return (
         <Router>
             <div>
-                <NavBar />
-
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                 </Routes>
