@@ -1,0 +1,7 @@
+.div {
+    background-image: url('../images/pexels-madison-inouye-1831234.jpg');
+    background-size: "cover";
+    height: 100vh;
+    width: 100vw;
+    background-repeat:no-repeat; 
+}

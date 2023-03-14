@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavBar() {
     return (
-        <div>
+        <div style={{height:'2vh'}}>
             hello
         </div>
     );

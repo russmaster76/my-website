@@ -10,31 +10,16 @@ import Col from 'react-bootstrap/Col';
 
 function Home() {
     return(
-        <div className="background">
-        <div>
-        <Container className='container'>
-        <Row>
-        <Col>
-        <div className='maindisplay'>
-        <h1 className='header'>
-            Welcome!
-        </h1>
-        <p>
-            My name is Russell Banks, A Computer Science Student at UCSD, and Aspiring Software Engineer.
-        </p>
-        <p>
-            This website is being built both as a personal project, as well as a future portfolio to display projects, skills, and more.
-        </p>
+<body className='body'>
+	<div className="container">
+		<h1 className='h1'>Welcome!</h1>
+        <div className='form'>
+            Hello! My name is Russell Banks, I am a Computer Science Student 
+            and aspiring Software Engineer. This website is built both as a 
+            personal project and a future portfolio to store projects.
         </div>
-        </Col>
-        </Row>
-        <Row>
-        <Col>
-        </Col>
-        </Row>
-        </Container>
-        </div>
-        </div>
+	</div>
+</body>
     );
 }
 

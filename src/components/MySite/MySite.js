@@ -1,10 +1,12 @@
 import Home from "../Home/Home"
 import NavBar from "../NavBar/NavBar"
+import './MySite.css'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 function MySite() {
     return (
         <Router>
-            <div>
+            <div className="div">
+                <NavBar/>
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                 </Routes>
