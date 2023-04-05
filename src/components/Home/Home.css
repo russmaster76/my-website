@@ -1,18 +1,18 @@
 /* Center the content vertically and horizontally */
 .body {
-	height: 100vh;
+	height: calc(100vh - 50px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 50px 0 0 0;
-	overflow: hidden;
 }
   
 /* Add padding and border to the content container */
 .content {
 	padding: 2rem;
 	border: 1px solid #ccc;
-	max-width: 1000px;
+	width: 98%;
+	height: 98%;
+
 }
   
 /* Style the heading and paragraphs */
@@ -26,4 +26,9 @@
 	font-size: 1.2rem;
 	line-height: 1.5;
 	margin-bottom: 1rem;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
 }
