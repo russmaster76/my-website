@@ -5,8 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 function MySite() {
     return (
         <Router>
-            <div className="div">
-                <NavBar/>
+            <div>
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                 </Routes>

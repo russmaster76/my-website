@@ -1,25 +1,20 @@
 import './Home.css';
-import NavBar from '../NavBar/NavBar';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col';
+import NavBar from "../NavBar/NavBar"
 
 
 function Home() {
     return(
-<body className='body'>
-	<div className="container">
-		<h1 className='h1'>Welcome!</h1>
-        <div className='form'>
-            Hello! My name is Russell Banks, I am a Computer Science Student 
-            and aspiring Software Engineer. This website is built both as a 
-            personal project and a future portfolio to store projects.
-        </div>
-	</div>
-</body>
+    <div>
+    <NavBar />
+    <div className='body'>
+    <div className='content'>
+        <h1 className='h1'>Welcome to my personal website!</h1>
+        <p className='p'>Thanks for stopping by. My name is [Your Name], and this is where you can find out more about me, my work, and my interests.</p>
+        <p className='p'>Feel free to explore the site, check out my portfolio, or read my latest blog posts. If you have any questions or want to get in touch, don't hesitate to reach out using the contact form.</p>
+        <p className='p'>Thanks again for visiting, and I hope you enjoy your stay!</p>
+    </div>
+    </div>
+    </div>
     );
 }
 

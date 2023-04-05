@@ -20,10 +20,10 @@ import {
 function NavBar() {
     const [showBasic, setShowBasic] = useState(false);
     return (
-        <div className='divstyle'>
-        <MDBNavbar expand='lg' light bgColor='light'>
+        <div>
+        <MDBNavbar expand='lg' light bgColor='light' style={{height: '50px'}}>
         <MDBContainer fluid>
-        <MDBNavbarBrand href='#'>Brand</MDBNavbarBrand>
+        <MDBNavbarBrand href='#'>Russell Banks</MDBNavbarBrand>
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
           aria-expanded='false'
@@ -40,12 +40,12 @@ function NavBar() {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#'>Link</MDBNavbarLink>
+              <MDBNavbarLink href='#'>About Me</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBDropdown>
                 <MDBDropdownToggle tag='a' className='nav-link' role='button'>
-                  Dropdown
+                  Projects
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem link>Action</MDBDropdownItem>
@@ -55,15 +55,21 @@ function NavBar() {
               </MDBDropdown>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
-                Disabled
-              </MDBNavbarLink>
+              <MDBDropdown>
+                <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                  Work Experience
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem link>Kyocera International</MDBDropdownItem>
+                  <MDBDropdownItem link>Yakitori Taisho</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
             </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>
-        </div>
+    </div>
     );
 }
 export default NavBar;
